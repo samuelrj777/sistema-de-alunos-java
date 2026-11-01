@@ -40,7 +40,7 @@ public class Main {
                     JOptionPane.showMessageDialog(null,"Nenhum aluno regitrado ainda");
                 }else {
                 for (int i = 0; i < qnt; i++) {
-
+                         media[i] = (not1[i] + not2[i] + (not3[i] * 2)) / 4;
                     JOptionPane.showMessageDialog(null, "\n" + nome[i] + "\nNumero de matricula: \n" + matr[i] + "\nMédia: \n" + media[i]);
                 }
             }
