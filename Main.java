@@ -27,7 +27,7 @@ public class Main {
                 not3 = new double[qnt];
                 media = new double[qnt];
                 for (int i = 0; i < qnt; i++) {
-                        nome[0] = JOptionPane.showInputDialog(null, "Qual nome do aluno ");
+                        nome[i] = JOptionPane.showInputDialog(null, "Qual nome do aluno ");
                     matr[i] = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o numero de mátricula do aluno "));
                     not1[i] = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite a primeira nota do aluno "));
                     not2[i] = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite a segunda nota do aluno "));
@@ -41,7 +41,7 @@ public class Main {
                 }else {
                 for (int i = 0; i < qnt; i++) {
 
-                    JOptionPane.showMessageDialog(null, "\n" + nome[0] + "\nNumero de matricula: \n" + matr[i] + "\nMédia: \n" + media[i]);
+                    JOptionPane.showMessageDialog(null, "\n" + nome[i] + "\nNumero de matricula: \n" + matr[i] + "\nMédia: \n" + media[i]);
                 }
             }
                 break;
