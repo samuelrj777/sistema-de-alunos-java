@@ -36,16 +36,23 @@ public class Main {
 
                 break;
             case 2:
+                if (nome == null) {
+                    JOptionPane.showMessageDialog(null,"Nenhum aluno regitrado ainda");
+                }else {
                 for (int i = 0; i < qnt; i++) {
 
                     JOptionPane.showMessageDialog(null, "\n" + nome[0] + "\nNumero de matricula: \n" + matr[i] + "\nMédia: \n" + media[i]);
                 }
-
+            }
                 break;
             case 3:
+                 if (media == null) {
+                    JOptionPane.showMessageDialog(null,"Nenhum aluno regitrado ainda");
+                }else {
                 for (int i = 0; i < qnt; i++) {
                     media[i] = (not1[i] + not2[i] + (not3[i] * 2)) / 4;
                     JOptionPane.showMessageDialog(null, "Nome: \n" + nome[i] + "\nMédia: \n"+media[i]);
+                    }
                 }
                 break;
             case 0:
